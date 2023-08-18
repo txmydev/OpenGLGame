@@ -7,9 +7,8 @@ Write-Output "Compiling the program..."
 $include_options='-I../include/'
 $linker_paths='-L../lib/'
 $output='../bin/app'
-$files = 'main.c keyboard.c'
 
-gcc -g -o $output $include_options $linker_paths $files -lglfw3 -lopengl32 -luser32 -lkernel32 -lgdi32
+gcc -g -o $output $include_options $linker_paths main.c glad.c input.c -lglfw3 -lopengl32 -luser32 -lkernel32 -lgdi32
 
 $prompt=Read-Host 'Run the program (Y/N)'
 Clear-Host

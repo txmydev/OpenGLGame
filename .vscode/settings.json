@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "glfw3.h": "c"
+        "glfw3.h": "c",
+        "types.h": "c",
+        "cstdlib": "c",
+        "stdio.h": "c"
     }
 }
